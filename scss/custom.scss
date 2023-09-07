@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// animation for navigation images, and carousel images
+.navbar-brand, #social-links a, #prev, #next, #project-code, #project-demo {
+
+    :hover {
+        transform: scale(1.2);
+        animation: 0.7s ease-in-out;
+    }
+
+}
+
+// text decoration for a
+a {
+
+    text-decoration: none !important;
+    
+}
+
+// bootstrap main color for span
+.bootstrap {
+
+    color: rgb(113, 44, 249);
+
+}
+
+// bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

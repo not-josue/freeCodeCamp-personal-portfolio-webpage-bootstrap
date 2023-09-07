@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Josue Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="personal portfolio page for freeCodeCamp responsive web design certificate" />
+    <meta name="keywords" content="freeCodeCamp, personal portfolio page, responsive web design certificate" />
+    <meta name="author" content="Josue" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./dist/styles.min.css">
+</head>
+
+<body>
+
+    <header id="navbar" class="sticky-top bg-white border-bottom border-black border-3 px-5">
+        <nav class="navbar navbar-expand-md text-bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logo.svg" alt="brand logo">
+                    Josue.Dev
+                </a>
+                <!-- Hamburger for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav me-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcome-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Social Accounts -->
+                    <div id="social-links">
+                        <a id="profile-link" href="https://github.com/not-josue" target="_blank" title="go to GitHub">
+                            <img src="./assets/github.svg" alt="github logo">
+                        </a>
+                        <a href="" target="_blank" title="go to LinkedIn">
+                            <img src="./assets/linkedin.svg" alt="linkedin logo">
+                        </a>
+                        <a href="" target="_blank" title="go to Medium">
+                            <img src="./assets/medium.svg" alt="medium logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- welcome-section -->
+        <section id="welcome-section" class="d-flex align-items-center text-center text-bg-light">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-7 col-md-8">
+                        <h1 class="display-2">Hello, I am Josue</h1>
+                        <p class="h3">A <span class="bootstrap">Bootstrap</span> developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" class="text-bg-dark py-5">
+            <div class="container-fluid">
+                <header class="text-center">
+                    <h2 class="display-4">Projects</h2>
+                    <p class="h3">Here are some of my <span class="bootstrap">Bootstrap</span> projects for <a
+                            href="https://www.freecodecamp.org/learn/" target="_blank"
+                            title="go to freeCodeCamp">freeCodeCamp</a></p>
+                </header>
+                <!-- Carousel (JavaScript all textContent, and attributes) -->
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-md-7 mt-5 project-tile">
+                        <div class="card">
+                            <img src="" class="card-img-top img-fluid" alt="">
+                            <!-- Buttons for Carousel -->
+                            <button id="prev" class="carousel-control-prev" type="button">
+                                <img src="./assets/arrow-left.svg" alt="arrow left">
+                            </button>
+                            <button id="next" class="carousel-control-next" type="button">
+                                <img src="./assets/arrow-right.svg" alt="arrow right">
+                            </button>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-semibold"></h5>
+                                <p class="card-text"></p>
+                                <div>
+                                    <a id="project-code" href="" class="me-3 text-dark" target="_blank"
+                                        title="go to GitHub">
+                                        <img src="./assets/git.svg" alt="git logo" aria-hidden="true">
+                                        Repo
+                                    </a>
+                                    <a id="project-demo" href="" class="text-dark" target="_blank"
+                                        title="view live demo">
+                                        <img src="./assets/rocket.svg" alt="rocket" aria-hidden="true">
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacts -->
+        <section id="contact" class="text-bg-light py-5">
+            <div class="container-fluid">
+                <header class="text-center">
+                    <h2 class="display-4">Contact</h2>
+                    <p class="h3">Send me a message</p>
+                </header>
+                <!-- form -->
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-md-7">
+                        <form class="text-bg-dark p-5 mt-5" action="https://www.freecodecamp.com/email-submit">
+                            <!-- Name -->
+                            <label for="name">Name:</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <img aria-hidden="true" src="./assets/person.svg" alt="person in a square">
+                                </span>
+                                <input id="name" name="name" type="text" placeholder="Josue" aria-label="Name" required>
+                            </div>
+                            <!-- Name -->
+                            <label for="email">Email:</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                    <img aria-hidden="true" src="./assets/email.svg" alt="envelope with @">
+                                </span>
+                                <input id="email" name="email" type="email" placeholder="josue@example.com"
+                                    aria-label="Email" required>
+                            </div>
+                            <!-- Textarea -->
+                            <label for="textarea" class="form-label">Message</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text">
+                                    <img aria-hidden="true" src="./assets/chat.svg" alt="chat bubble with quotes">
+                                </span>
+                                <textarea id="textarea" class="form-control border-black focus-ring focus-ring-light"
+                                    aria-label="Message" rows="5" placeholder="This is my message to you." required></textarea>
+                            </div>
+                            <!-- Submit -->
+                            <div class="d-grid">
+                                <input id="submit" type="submit" class="btn btn-light" value="Submit"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="text-bg-dark py-3">
+        <div class="container-fluid text-center">
+            Copyright &copy;, Josue.Dev <span id="date"></span>
+        </div>
+    </footer>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            show();
+            socialLinkMargin();
+            heroHeightFix();
+            smoothScroll();
+            labelClasses();
+            inputClasses();
+            date();
+
+            // adjust hero height on resize
+            window.onresize = () => {
+                heroHeightFix();
+            }
+
+            carousel(counter);
+
+            // get next button
+            const next = document.getElementById("next");
+            next.onclick = () => {
+                counter = add(counter);
+                carousel(counter);
+            }
+
+            // get prev button
+            const prev = document.getElementById("prev");
+            prev.onclick = () => {
+                counter = subtract(counter);
+                carousel(counter);
+            }
+
+        });
+
+        // toggle navbar on mobile devices
+        const show = () => {
+
+            // get toggle button
+            const buttonElement = document.querySelector(".navbar-toggler");
+            // onclick event
+            buttonElement.onclick = () => {
+                // get hidden div, toggle show class
+                const divElement = document.querySelector(".collapse");
+                divElement.classList.toggle("show");
+                // check for show class, and change aria-expanded
+                if (divElement.classList.contains("show")) buttonElement.setAttribute("aria-expanded", "true");
+                else buttonElement.setAttribute("aria-expanded", "false");
+            }
+
+        }
+
+        // margins for social links images
+        const socialLinkMargin = () => {
+
+            // get all social links
+            const socialLinks = document.querySelectorAll("#social-links a");
+            socialLinks.forEach((link, index) => {
+                // add me-3 class for all except last link
+                if (index !== socialLinks.length - 1) link.classList.add("me-3");
+            });
+
+        }
+
+        // welcome-section height
+        const heroHeightFix = () => {
+
+            // get header/nav element and height
+            const headerElement = document.body.querySelector("header");
+            const headerHeight = headerElement.offsetHeight;
+            // get welcome-section
+            const sectionElement = document.querySelector("#welcome-section");
+            // set section height to window height - header/nav height
+            const sectionHeight = window.innerHeight - headerHeight;
+            sectionElement.style.height = sectionHeight + "px";
+
+        }
+
+        // carousel
+        const PROJECTS =
+            [
+                {
+                    src: "./assets/fcc-survey-form-bootstrap.png",
+                    alt: "survey form",
+                    title: "Survey Form",
+                    text: "A survey form for improving Elder Scrolls Online (ESO).",
+                    code: "https://github.com/not-josue/freeCodeCamp-survey-form-bootstrap",
+                    demo: "https://not-josue.github.io/freeCodeCamp-survey-form-bootstrap/"
+                },
+                {
+                    src: "./assets/fcc-tribute-page-bootstrap.png",
+                    alt: "tribute page",
+                    title: "Tribute Page",
+                    text: "A Tribute Page for footballer Ronaldinho Gaúcho.",
+                    code: "https://github.com/not-josue/freeCodeCamp-tribute-page-bootstrap",
+                    demo: "https://not-josue.github.io/freeCodeCamp-tribute-page-bootstrap/"
+                },
+                {
+                    src: "./assets/fcc-technical-documentation-page-bootstrap.png",
+                    alt: "technical document",
+                    title: "Technical Document",
+                    text: "A technical document detailing an introduction to Bootstrap.",
+                    code: "https://github.com/not-josue/freeCodeCamp-technical-documentation-page-bootstrap",
+                    demo: "https://not-josue.github.io/freeCodeCamp-technical-documentation-page-bootstrap//"
+                },
+                {
+                    src: "./assets/fcc-product-landing-page-bootstrap.png",
+                    alt: "product landing page",
+                    title: "Product Landing Page",
+                    text: "A product page for promoting Pokemon plushes.",
+                    code: "https://github.com/not-josue/freeCodeCamp-product-landing-page-bootstrap",
+                    demo: "https://not-josue.github.io/freeCodeCamp-product-landing-page-bootstrap/"
+                },
+            ]
+        let counter = 0;
+        const carousel = (integer) => {
+
+            // get and set card image
+            const cardImg = document.querySelector(".card img");
+            cardImg.setAttribute("src", PROJECTS[counter].src);
+            cardImg.setAttribute("alt", PROJECTS[counter].alt);
+            // get and set card-title
+            const cardTitle = document.querySelector(".card-title");
+            cardTitle.textContent = PROJECTS[counter].title;
+            // get and set card-text
+            const cardText = document.querySelector(".card-text");
+            cardText.textContent = PROJECTS[counter].text;
+            // get and set project-code (github link)
+            const projectCode = document.getElementById("project-code");
+            projectCode.setAttribute("href", PROJECTS[counter].code);
+            // get and set project-demo (github pages link)
+            const projectDemo = document.getElementById("project-demo");
+            projectDemo.setAttribute("href", PROJECTS[counter].demo);
+
+        }
+
+        const add = (integer) => {
+
+            integer++;
+            if (integer >= PROJECTS.length) integer = 0;
+            return integer;
+
+        }
+
+        const subtract = (integer) => {
+
+            integer--;
+            if (integer < 0) integer = PROJECTS.length - 1;
+            return integer;
+
+        }
+
+        // smooth scrolling fix
+        const smoothScroll = () => {
+
+            // get nav-links
+            const aElements = Array.from(document.getElementsByClassName("nav-link"));
+            // traverse the array
+            aElements.forEach((link) => {
+
+                // add an event listener for each link
+                link.onclick = (e) => {
+
+                    // prevent default behavior
+                    e.preventDefault();
+                    // get href attribute without #
+                    const href = e.target.getAttribute("href").slice(1);
+                    // get element that matches href
+                    const scrollTarget = document.getElementById(href);
+                    // get header/nav element
+                    const headerElement = document.querySelector("header");
+                    // get header/nav height
+                    const headerHeight = headerElement.getBoundingClientRect().height;
+                    // set position to scroll to
+                    const position = scrollTarget.offsetTop - headerHeight;
+                    // scroll to position
+                    window.scrollTo({
+                        top: position
+                    });
+
+                    // close nav-link div if showing on mobile
+                    // get toggle button
+                    const divElement = document.querySelector(".collapse");
+                    if (divElement.classList.contains("show")) {
+                        divElement.classList.toggle("show");
+                        // get toggle button
+                        const buttonElement = document.querySelector(".navbar-toggler");
+                        buttonElement.setAttribute("aria-expanded", "false");
+                        console.log("close", position);
+                    }
+
+                }
+
+            });
+
+        }
+
+        // label classes
+        const labelClasses = () => {
+
+            const labelElements = Array.from(document.getElementsByTagName("label"));
+            labelElements.forEach((label) => {
+                label.classList.add("form-label", "h4");
+            });
+
+        }
+
+        // input classes
+        const inputClasses = () => {
+
+            const inputElements = Array.from(document.getElementsByTagName("input"));
+            inputElements.forEach((input) => {
+                input.classList.add("form-control", "border-black", "focus-ring", "focus-ring-light");
+            });
+
+        }
+
+        // footer date
+        const date = () => {
+
+            const spanElement = document.getElementById("date");
+            spanElement.textContent = new Date().getFullYear();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
